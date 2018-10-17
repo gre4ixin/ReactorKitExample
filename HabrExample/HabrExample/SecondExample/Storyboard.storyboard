@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Json Placeholer Test View Controller-->
+        <scene sceneID="6EE-lO-ctr">
+            <objects>
+                <viewController storyboardIdentifier="JsonPlaceholerTestViewController" id="EZT-Wg-A23" customClass="JsonPlaceholerTestViewController" customModule="SpasiboRx" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="CMA-jD-kXj">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="DoI-8q-Se5">
+                                <rect key="frame" x="0.0" y="20" width="375" height="587"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" id="TPN-ru-E91">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="TPN-ru-E91" id="wp4-Zf-15G">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b9Y-lg-rmf">
+                                <rect key="frame" x="0.0" y="607" width="375" height="60"/>
+                                <state key="normal" title="One more"/>
+                            </button>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="FRR-rC-6yH">
+                                <rect key="frame" x="169" y="315" width="37" height="37"/>
+                                <color key="color" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </activityIndicatorView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="b9Y-lg-rmf" firstAttribute="top" secondItem="DoI-8q-Se5" secondAttribute="bottom" id="Da8-sI-hWD"/>
+                            <constraint firstItem="b9Y-lg-rmf" firstAttribute="bottom" secondItem="uHr-pD-zkG" secondAttribute="bottom" id="Dj6-xu-CQb"/>
+                            <constraint firstItem="DoI-8q-Se5" firstAttribute="top" secondItem="uHr-pD-zkG" secondAttribute="top" id="IZG-4s-PQC"/>
+                            <constraint firstItem="DoI-8q-Se5" firstAttribute="leading" secondItem="uHr-pD-zkG" secondAttribute="leading" id="WfI-7o-DwI"/>
+                            <constraint firstItem="uHr-pD-zkG" firstAttribute="bottom" secondItem="DoI-8q-Se5" secondAttribute="bottom" constant="60" id="YOu-GY-cgV"/>
+                            <constraint firstItem="FRR-rC-6yH" firstAttribute="centerY" secondItem="CMA-jD-kXj" secondAttribute="centerY" id="jry-po-2LH"/>
+                            <constraint firstItem="uHr-pD-zkG" firstAttribute="trailing" secondItem="DoI-8q-Se5" secondAttribute="trailing" id="k9a-bp-RGP"/>
+                            <constraint firstItem="FRR-rC-6yH" firstAttribute="centerX" secondItem="CMA-jD-kXj" secondAttribute="centerX" id="mNj-WG-dGH"/>
+                            <constraint firstItem="uHr-pD-zkG" firstAttribute="trailing" secondItem="b9Y-lg-rmf" secondAttribute="trailing" id="maY-I3-Qs9"/>
+                            <constraint firstItem="b9Y-lg-rmf" firstAttribute="leading" secondItem="uHr-pD-zkG" secondAttribute="leading" id="y0d-4H-l0J"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="uHr-pD-zkG"/>
+                    </view>
+                    <connections>
+                        <outlet property="activityIdicator" destination="FRR-rC-6yH" id="wxW-yD-QhS"/>
+                        <outlet property="nextPostButton" destination="b9Y-lg-rmf" id="44l-GA-KOB"/>
+                        <outlet property="tableView" destination="DoI-8q-Se5" id="hxW-vu-JIQ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Bcd-0B-sFD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="140" y="110.19490254872565"/>
+        </scene>
+    </scenes>
+</document>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Habr Reactor View Controller-->
+        <scene sceneID="DAh-TB-RTU">
+            <objects>
+                <viewController storyboardIdentifier="HabrReactorViewController" id="Twc-FQ-65r" customClass="HabrReactorViewController" customModule="SpasiboRx" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="zBb-5E-6hb">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n3H-zN-YKC">
+                                <rect key="frame" x="88" y="306" width="199" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="Yyk-Uw-noT"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dsa-xG-JP4">
+                                <rect key="frame" x="153" y="372" width="69" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="80f-ZQ-9b1"/>
+                                </constraints>
+                                <state key="normal" title="Добавить"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xVC-rv-3dJ">
+                                <rect key="frame" x="162" y="427" width="51" height="30"/>
+                                <state key="normal" title="Отнять"/>
+                            </button>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="QqP-pw-qCR">
+                                <rect key="frame" x="169" y="315" width="37" height="37"/>
+                                <color key="color" cocoaTouchSystemColor="darkTextColor"/>
+                            </activityIndicatorView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="QqP-pw-qCR" firstAttribute="centerX" secondItem="zBb-5E-6hb" secondAttribute="centerX" id="7wM-w2-dRB"/>
+                            <constraint firstItem="n3H-zN-YKC" firstAttribute="leading" secondItem="FAP-QX-EMP" secondAttribute="leading" constant="88" id="P3a-ex-uzj"/>
+                            <constraint firstItem="xVC-rv-3dJ" firstAttribute="centerX" secondItem="zBb-5E-6hb" secondAttribute="centerX" id="Rxu-AF-ql2"/>
+                            <constraint firstItem="Dsa-xG-JP4" firstAttribute="top" secondItem="n3H-zN-YKC" secondAttribute="bottom" constant="36" id="WMh-u7-wyQ"/>
+                            <constraint firstItem="Dsa-xG-JP4" firstAttribute="centerX" secondItem="zBb-5E-6hb" secondAttribute="centerX" id="Xi9-Fw-pkc"/>
+                            <constraint firstItem="n3H-zN-YKC" firstAttribute="top" secondItem="FAP-QX-EMP" secondAttribute="top" constant="286" id="aFM-4b-jr6"/>
+                            <constraint firstItem="xVC-rv-3dJ" firstAttribute="top" secondItem="Dsa-xG-JP4" secondAttribute="bottom" constant="25" id="oY0-bH-aHb"/>
+                            <constraint firstItem="FAP-QX-EMP" firstAttribute="trailing" secondItem="n3H-zN-YKC" secondAttribute="trailing" constant="88" id="sql-E4-aST"/>
+                            <constraint firstItem="QqP-pw-qCR" firstAttribute="centerY" secondItem="zBb-5E-6hb" secondAttribute="centerY" id="y3U-ZH-bcS"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="FAP-QX-EMP"/>
+                    </view>
+                    <connections>
+                        <outlet property="activityIndicator" destination="QqP-pw-qCR" id="Clz-pr-vAy"/>
+                        <outlet property="decrimentButton" destination="xVC-rv-3dJ" id="4WK-Uz-W8K"/>
+                        <outlet property="incrementButton" destination="Dsa-xG-JP4" id="1mn-Cr-syl"/>
+                        <outlet property="label" destination="n3H-zN-YKC" id="NYt-r0-6c6"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nJe-pR-DJQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-55.200000000000003" y="22.938530734632685"/>
+        </scene>
+    </scenes>
+</document>

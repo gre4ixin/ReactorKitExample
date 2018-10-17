@@ -1,0 +1,554 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6561A322217725A0000E1AB1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6561A321217725A0000E1AB1 /* AppDelegate.swift */; };
+		6561A329217725A1000E1AB1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6561A328217725A1000E1AB1 /* Assets.xcassets */; };
+		6561A32C217725A1000E1AB1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6561A32A217725A1000E1AB1 /* LaunchScreen.storyboard */; };
+		6561A33721772915000E1AB1 /* HabrReactorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6561A33421772915000E1AB1 /* HabrReactorView.swift */; };
+		6561A33821772915000E1AB1 /* HabrReactorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6561A33521772915000E1AB1 /* HabrReactorViewController.swift */; };
+		6561A33921772915000E1AB1 /* HabrTest.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6561A33621772915000E1AB1 /* HabrTest.storyboard */; };
+		6561A33E21772A96000E1AB1 /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6561A33B21772A96000E1AB1 /* Storyboard.storyboard */; };
+		6561A33F21772A96000E1AB1 /* JsonPlaceholerTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6561A33C21772A96000E1AB1 /* JsonPlaceholerTestViewController.swift */; };
+		6561A34021772A96000E1AB1 /* JsonPlaceholerTestReactorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6561A33D21772A96000E1AB1 /* JsonPlaceholerTestReactorView.swift */; };
+		6561A35721772AE4000E1AB1 /* VKStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6561A34421772AE4000E1AB1 /* VKStorage.swift */; };
+		6561A35821772AE4000E1AB1 /* AuthorizationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6561A34521772AE4000E1AB1 /* AuthorizationViewController.swift */; };
+		6561A35921772AE4000E1AB1 /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6561A34621772AE4000E1AB1 /* StringExtension.swift */; };
+		6561A35A21772AE4000E1AB1 /* AuthorizationViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6561A34721772AE4000E1AB1 /* AuthorizationViewController.storyboard */; };
+		6561A35B21772AE4000E1AB1 /* SearchingInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6561A34921772AE4000E1AB1 /* SearchingInteractor.swift */; };
+		6561A35C21772AE4000E1AB1 /* FindPeopleReactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6561A34B21772AE4000E1AB1 /* FindPeopleReactor.swift */; };
+		6561A35E21772AE4000E1AB1 /* FindPeopleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6561A34E21772AE4000E1AB1 /* FindPeopleViewController.swift */; };
+		6561A35F21772AE4000E1AB1 /* FindStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6561A34F21772AE4000E1AB1 /* FindStoryboard.storyboard */; };
+		6561A36021772AE4000E1AB1 /* UserCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6561A35121772AE4000E1AB1 /* UserCell.xib */; };
+		6561A36121772AE4000E1AB1 /* UserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6561A35221772AE4000E1AB1 /* UserCell.swift */; };
+		6561A36221772AE4000E1AB1 /* UserCellObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6561A35421772AE4000E1AB1 /* UserCellObject.swift */; };
+		6561A36321772AE4000E1AB1 /* Factory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6561A35621772AE4000E1AB1 /* Factory.swift */; };
+		8CEF06B8E0BDD6DA3308CEDD /* Pods_HabrExample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 031BB3B96C097B38BAF731CA /* Pods_HabrExample.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		031BB3B96C097B38BAF731CA /* Pods_HabrExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HabrExample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6561A31E217725A0000E1AB1 /* HabrExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HabrExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6561A321217725A0000E1AB1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		6561A328217725A1000E1AB1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6561A32B217725A1000E1AB1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		6561A32D217725A1000E1AB1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6561A33421772915000E1AB1 /* HabrReactorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HabrReactorView.swift; sourceTree = "<group>"; };
+		6561A33521772915000E1AB1 /* HabrReactorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HabrReactorViewController.swift; sourceTree = "<group>"; };
+		6561A33621772915000E1AB1 /* HabrTest.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = HabrTest.storyboard; sourceTree = "<group>"; };
+		6561A33B21772A96000E1AB1 /* Storyboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Storyboard.storyboard; sourceTree = "<group>"; };
+		6561A33C21772A96000E1AB1 /* JsonPlaceholerTestViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JsonPlaceholerTestViewController.swift; sourceTree = "<group>"; };
+		6561A33D21772A96000E1AB1 /* JsonPlaceholerTestReactorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JsonPlaceholerTestReactorView.swift; sourceTree = "<group>"; };
+		6561A34421772AE4000E1AB1 /* VKStorage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VKStorage.swift; sourceTree = "<group>"; };
+		6561A34521772AE4000E1AB1 /* AuthorizationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthorizationViewController.swift; sourceTree = "<group>"; };
+		6561A34621772AE4000E1AB1 /* StringExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
+		6561A34721772AE4000E1AB1 /* AuthorizationViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = AuthorizationViewController.storyboard; sourceTree = "<group>"; };
+		6561A34921772AE4000E1AB1 /* SearchingInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchingInteractor.swift; sourceTree = "<group>"; };
+		6561A34B21772AE4000E1AB1 /* FindPeopleReactor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FindPeopleReactor.swift; sourceTree = "<group>"; };
+		6561A34E21772AE4000E1AB1 /* FindPeopleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FindPeopleViewController.swift; sourceTree = "<group>"; };
+		6561A34F21772AE4000E1AB1 /* FindStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = FindStoryboard.storyboard; sourceTree = "<group>"; };
+		6561A35121772AE4000E1AB1 /* UserCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UserCell.xib; sourceTree = "<group>"; };
+		6561A35221772AE4000E1AB1 /* UserCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserCell.swift; sourceTree = "<group>"; };
+		6561A35421772AE4000E1AB1 /* UserCellObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserCellObject.swift; sourceTree = "<group>"; };
+		6561A35621772AE4000E1AB1 /* Factory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Factory.swift; sourceTree = "<group>"; };
+		716898770AEEEE16D3196AB9 /* Pods-HabrExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HabrExample.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HabrExample/Pods-HabrExample.debug.xcconfig"; sourceTree = "<group>"; };
+		C166FF4D1DC65F874EC037E9 /* Pods-HabrExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HabrExample.release.xcconfig"; path = "Pods/Target Support Files/Pods-HabrExample/Pods-HabrExample.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6561A31B217725A0000E1AB1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8CEF06B8E0BDD6DA3308CEDD /* Pods_HabrExample.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6561A315217725A0000E1AB1 = {
+			isa = PBXGroup;
+			children = (
+				6561A320217725A0000E1AB1 /* HabrExample */,
+				6561A31F217725A0000E1AB1 /* Products */,
+				BEE2E59538431947BDD4CCF1 /* Pods */,
+				EC9E9771F20340C0A5C830C3 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		6561A31F217725A0000E1AB1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6561A31E217725A0000E1AB1 /* HabrExample.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6561A320217725A0000E1AB1 /* HabrExample */ = {
+			isa = PBXGroup;
+			children = (
+				6561A34121772ABB000E1AB1 /* ThirdExample */,
+				6561A33A21772A87000E1AB1 /* SecondExample */,
+				6561A3332177263B000E1AB1 /* FirstExample */,
+				6561A321217725A0000E1AB1 /* AppDelegate.swift */,
+				6561A328217725A1000E1AB1 /* Assets.xcassets */,
+				6561A32A217725A1000E1AB1 /* LaunchScreen.storyboard */,
+				6561A32D217725A1000E1AB1 /* Info.plist */,
+			);
+			path = HabrExample;
+			sourceTree = "<group>";
+		};
+		6561A3332177263B000E1AB1 /* FirstExample */ = {
+			isa = PBXGroup;
+			children = (
+				6561A33421772915000E1AB1 /* HabrReactorView.swift */,
+				6561A33521772915000E1AB1 /* HabrReactorViewController.swift */,
+				6561A33621772915000E1AB1 /* HabrTest.storyboard */,
+			);
+			path = FirstExample;
+			sourceTree = "<group>";
+		};
+		6561A33A21772A87000E1AB1 /* SecondExample */ = {
+			isa = PBXGroup;
+			children = (
+				6561A33D21772A96000E1AB1 /* JsonPlaceholerTestReactorView.swift */,
+				6561A33C21772A96000E1AB1 /* JsonPlaceholerTestViewController.swift */,
+				6561A33B21772A96000E1AB1 /* Storyboard.storyboard */,
+			);
+			path = SecondExample;
+			sourceTree = "<group>";
+		};
+		6561A34121772ABB000E1AB1 /* ThirdExample */ = {
+			isa = PBXGroup;
+			children = (
+				6561A34221772AE4000E1AB1 /* VK */,
+			);
+			path = ThirdExample;
+			sourceTree = "<group>";
+		};
+		6561A34221772AE4000E1AB1 /* VK */ = {
+			isa = PBXGroup;
+			children = (
+				6561A34321772AE4000E1AB1 /* Auth */,
+				6561A34821772AE4000E1AB1 /* Network */,
+				6561A34A21772AE4000E1AB1 /* Find */,
+			);
+			path = VK;
+			sourceTree = "<group>";
+		};
+		6561A34321772AE4000E1AB1 /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				6561A34421772AE4000E1AB1 /* VKStorage.swift */,
+				6561A34521772AE4000E1AB1 /* AuthorizationViewController.swift */,
+				6561A34621772AE4000E1AB1 /* StringExtension.swift */,
+				6561A34721772AE4000E1AB1 /* AuthorizationViewController.storyboard */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		6561A34821772AE4000E1AB1 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				6561A34921772AE4000E1AB1 /* SearchingInteractor.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		6561A34A21772AE4000E1AB1 /* Find */ = {
+			isa = PBXGroup;
+			children = (
+				6561A35521772AE4000E1AB1 /* Factory */,
+				6561A35321772AE4000E1AB1 /* CellObject */,
+				6561A35021772AE4000E1AB1 /* Cell */,
+				6561A34B21772AE4000E1AB1 /* FindPeopleReactor.swift */,
+				6561A34E21772AE4000E1AB1 /* FindPeopleViewController.swift */,
+				6561A34F21772AE4000E1AB1 /* FindStoryboard.storyboard */,
+			);
+			path = Find;
+			sourceTree = "<group>";
+		};
+		6561A35021772AE4000E1AB1 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				6561A35121772AE4000E1AB1 /* UserCell.xib */,
+				6561A35221772AE4000E1AB1 /* UserCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		6561A35321772AE4000E1AB1 /* CellObject */ = {
+			isa = PBXGroup;
+			children = (
+				6561A35421772AE4000E1AB1 /* UserCellObject.swift */,
+			);
+			path = CellObject;
+			sourceTree = "<group>";
+		};
+		6561A35521772AE4000E1AB1 /* Factory */ = {
+			isa = PBXGroup;
+			children = (
+				6561A35621772AE4000E1AB1 /* Factory.swift */,
+			);
+			path = Factory;
+			sourceTree = "<group>";
+		};
+		BEE2E59538431947BDD4CCF1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				716898770AEEEE16D3196AB9 /* Pods-HabrExample.debug.xcconfig */,
+				C166FF4D1DC65F874EC037E9 /* Pods-HabrExample.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		EC9E9771F20340C0A5C830C3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				031BB3B96C097B38BAF731CA /* Pods_HabrExample.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6561A31D217725A0000E1AB1 /* HabrExample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6561A330217725A1000E1AB1 /* Build configuration list for PBXNativeTarget "HabrExample" */;
+			buildPhases = (
+				44026F8248004967E5B82B74 /* [CP] Check Pods Manifest.lock */,
+				6561A31A217725A0000E1AB1 /* Sources */,
+				6561A31B217725A0000E1AB1 /* Frameworks */,
+				6561A31C217725A0000E1AB1 /* Resources */,
+				6745B3D31332EFBE46ADCCE1 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HabrExample;
+			productName = HabrExample;
+			productReference = 6561A31E217725A0000E1AB1 /* HabrExample.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6561A316217725A0000E1AB1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1000;
+				LastUpgradeCheck = 1000;
+				ORGANIZATIONNAME = "Pavel Grechikhin";
+				TargetAttributes = {
+					6561A31D217725A0000E1AB1 = {
+						CreatedOnToolsVersion = 10.0;
+					};
+				};
+			};
+			buildConfigurationList = 6561A319217725A0000E1AB1 /* Build configuration list for PBXProject "HabrExample" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6561A315217725A0000E1AB1;
+			productRefGroup = 6561A31F217725A0000E1AB1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6561A31D217725A0000E1AB1 /* HabrExample */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6561A31C217725A0000E1AB1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6561A35F21772AE4000E1AB1 /* FindStoryboard.storyboard in Resources */,
+				6561A33921772915000E1AB1 /* HabrTest.storyboard in Resources */,
+				6561A35A21772AE4000E1AB1 /* AuthorizationViewController.storyboard in Resources */,
+				6561A33E21772A96000E1AB1 /* Storyboard.storyboard in Resources */,
+				6561A32C217725A1000E1AB1 /* LaunchScreen.storyboard in Resources */,
+				6561A329217725A1000E1AB1 /* Assets.xcassets in Resources */,
+				6561A36021772AE4000E1AB1 /* UserCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		44026F8248004967E5B82B74 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HabrExample-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6745B3D31332EFBE46ADCCE1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-HabrExample/Pods-HabrExample-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/ReactorKit/ReactorKit.framework",
+				"${BUILT_PRODUCTS_DIR}/RxAlamofire/RxAlamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ReactorKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxAlamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HabrExample/Pods-HabrExample-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6561A31A217725A0000E1AB1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6561A35821772AE4000E1AB1 /* AuthorizationViewController.swift in Sources */,
+				6561A36121772AE4000E1AB1 /* UserCell.swift in Sources */,
+				6561A33821772915000E1AB1 /* HabrReactorViewController.swift in Sources */,
+				6561A33F21772A96000E1AB1 /* JsonPlaceholerTestViewController.swift in Sources */,
+				6561A35721772AE4000E1AB1 /* VKStorage.swift in Sources */,
+				6561A35B21772AE4000E1AB1 /* SearchingInteractor.swift in Sources */,
+				6561A36221772AE4000E1AB1 /* UserCellObject.swift in Sources */,
+				6561A35E21772AE4000E1AB1 /* FindPeopleViewController.swift in Sources */,
+				6561A35921772AE4000E1AB1 /* StringExtension.swift in Sources */,
+				6561A33721772915000E1AB1 /* HabrReactorView.swift in Sources */,
+				6561A34021772A96000E1AB1 /* JsonPlaceholerTestReactorView.swift in Sources */,
+				6561A35C21772AE4000E1AB1 /* FindPeopleReactor.swift in Sources */,
+				6561A322217725A0000E1AB1 /* AppDelegate.swift in Sources */,
+				6561A36321772AE4000E1AB1 /* Factory.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		6561A32A217725A1000E1AB1 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6561A32B217725A1000E1AB1 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6561A32E217725A1000E1AB1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		6561A32F217725A1000E1AB1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6561A331217725A1000E1AB1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 716898770AEEEE16D3196AB9 /* Pods-HabrExample.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = L95L34N5QL;
+				INFOPLIST_FILE = HabrExample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = gre4a.HabrExample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6561A332217725A1000E1AB1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C166FF4D1DC65F874EC037E9 /* Pods-HabrExample.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = L95L34N5QL;
+				INFOPLIST_FILE = HabrExample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = gre4a.HabrExample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6561A319217725A0000E1AB1 /* Build configuration list for PBXProject "HabrExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6561A32E217725A1000E1AB1 /* Debug */,
+				6561A32F217725A1000E1AB1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6561A330217725A1000E1AB1 /* Build configuration list for PBXNativeTarget "HabrExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6561A331217725A1000E1AB1 /* Debug */,
+				6561A332217725A1000E1AB1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6561A316217725A0000E1AB1 /* Project object */;
+}
