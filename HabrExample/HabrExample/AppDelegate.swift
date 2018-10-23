@@ -34,6 +34,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
          Third example init
         */
         
+        
         self.thirdExampleInitialization()
         
         self.window?.makeKeyAndVisible()
